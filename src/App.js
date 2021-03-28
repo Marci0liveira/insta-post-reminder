@@ -7,6 +7,7 @@ const App = {
       const time = 25 * 60; 
       //await Notifyer.init();
       //Notifyer.notify({ title: 'Time to post', body: 'Create engagement to build your community'});
+      //
       Timer.init();
     } 
     catch (error) {
