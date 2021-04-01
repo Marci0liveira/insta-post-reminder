@@ -2,8 +2,8 @@ const Emitter = {
   events: {},
 
   on(event, cb) {
-    Emitter.events[event] = Emitter.events[event] || []
-    Emitter.events[event].push(cb)
+    Emitter.events[event] = Emitter.events[event] || [];
+    Emitter.events[event].push(cb);
   },
 
   emit(event, ...rest) {
@@ -11,10 +11,11 @@ const Emitter = {
       return;
     }
 
-    Emitter.events[event].forEach((e) => {
-      e(...rest)
-    })
+    Emitter.events[event].forEach((element) => {
+      element(...rest);
+    });
   }
+  
 }
 
 export { Emitter }
